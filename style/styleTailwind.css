@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: open sans, sans-serif;
+  }
+}
+
+@layer components {
+  .contact {
+    @apply flex items-center gap-1;
+  }
+  .circle {
+    @apply rounded-full bg-sky-500 w-8 h-8 flex items-center justify-center;
+  }
+  .subheader2 {
+    @apply capitalize text-2xl font-semibold underline underline-offset-4 mt-3 mb-2;
+  }
+  .skill {
+    @apply py-1 px-2.5 bg-sky-500 rounded text-white capitalize;
+  }
+  .subheader3{
+    @apply text-lg font-medium capitalize;
+  }
+}
